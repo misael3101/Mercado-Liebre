@@ -1,0 +1,432 @@
+/**{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}*/
+
+:root {
+    --amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*encabezado*/
+
+header{
+    font-size: 12px;
+    background-color: var(--amarillo);
+    padding: 10px;
+}
+
+.header-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo{
+    flex-wrap: 0.30;
+}
+
+.flex-form{
+    max-width: 50vw;
+    align-self: center;
+    margin-right: 30px;
+}
+
+.buscar{
+    width: 115%;
+    background: white;
+    padding: 0.5vw;
+    border-radius: 5px;
+}
+
+.buscar1{
+    width: 83%;
+    border: none;
+    padding: 4px;
+}
+
+.boton{
+    border: none;
+    background: white;
+    padding: 0;
+}
+
+input:focus{
+    outline: none;
+}
+
+.site{
+    text-align: center;
+}
+
+.nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.nav{
+    display: none;
+}
+
+.nav a{
+    text-decoration: none;
+    padding: 5px;
+    color: #222222;
+    font-weight: 400;
+    display: inline-block;
+}
+
+
+.burger-menu{
+    background-color: var(--Azul);
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+/*main*/
+
+.carrusel{
+    width: 100vw;
+}
+
+main{
+    background-color: var(--Gris-claro);
+   
+}
+
+section{
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+}
+
+/*articulos*/
+
+.imagenes{
+    width: 90%;
+    
+    
+}
+
+article{
+    margin-bottom: 15px;
+    padding: 10%;
+}
+.titulares{
+    font-size: 24px;
+    padding: 5px;
+    font-weight: bold;
+    color: var(--Gris-oscuro);
+    box-sizing: border-box;
+}
+
+.articulo1, .articulo2, .articulo3, .articulo4{  
+    
+    padding: 10px;
+    border: solid 1px #ebebeb;
+    box-sizing: border-box;
+    background-color: white;
+    
+}
+
+.fa-truck{  
+    color: var(--Verde);
+    margin-left: 4%;
+    border: solid 1px var(--Verde);
+    padding: 8px 8px;
+    max-width: 20px;
+    border-radius: 100%;
+    font-size: 15px;
+   
+}
+
+.camionsito{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.des-flex{
+    display: flex;
+}
+
+.precios{
+    font-size: 18px;
+    flex-grow: 0.30;
+}
+
+.descuento {
+    font-size: 16px;
+    color: var(--Verde);
+    flex-grow: 0.70;
+    align-self: center;
+
+}
+
+.nombre-articulo{
+    font-size: 16px;
+    color: var(--Gris-oscuro);
+    font-weight: 400;
+    margin-left: 4%;
+    
+}
+
+
+  
+
+
+
+/*footer*/
+
+.foter{
+    text-align: center;
+}
+
+/*iconos del footer*/
+
+.fa-credit-card{
+    color: var(--Celeste);
+}
+
+.fa-gift {
+    color: var(--Celeste);
+}
+
+.fa-user-shield{
+    color: var(--Celeste);
+}
+
+.copyri {
+    color: var(--Gris-oscuro);
+    font-size: 13px;
+}
+
+
+/*responsive*/
+/*tablet*/
+
+@media(min-width:361px){
+    
+    .header-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo{
+        width: 20%;
+    }
+
+    .flex-form{
+        width: 28vw;
+    }
+
+    .site{
+        align-self: center;
+        font-size: 2vw;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav ul{
+        display: flex;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+ 
+    
+    .articulo1, .articulo2, .articulo3, .articulo4{
+        /*box-shadow: 0px 0px 10px rgb(100, 100, 100);*/
+        margin: 5px 5px;
+        width: 250px;
+
+    }
+
+    .imagenes{
+        width: 200px;
+    }
+
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: auto;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .foter{
+        text-align: center;
+    }
+
+ 
+}
+
+/*deskot*/
+
+@media (min-width:1220px){
+    .burger-menu{
+        display: none;
+    }
+
+    .site{
+        font-size: 15px
+    }
+
+    .flex-form{
+        width: 30vw;
+    }
+
+    .articulo1, .articulo2, .articulo3, .articulo4{
+        margin: 5px 5px;
+        height: 92%;
+
+    }
+
+    .flex-container{
+        display: flex;
+        height: 300px
+    }
+
+    .articulo1:hover{
+      height: 100%;
+    }
+
+    .articulo1 {
+        transition: all 0.3s ease;
+    }
+      
+    .articulo1:hover {
+        box-shadow: 0px 0px 20px rgb(100, 100, 100); 
+        
+    }
+
+    .articulo2:hover{
+        height: 100%;
+     }
+  
+    .articulo2 {
+          transition: all 0.3s ease;
+     }
+        
+    .articulo2:hover {
+          box-shadow: 0px 0px 20px rgb(100, 100, 100); 
+          
+    }
+
+    .articulo3:hover{
+         height: 100%;
+     }
+      
+    .articulo3 {
+        transition: all 0.3s ease;
+    }
+            
+    .articulo3:hover {
+        box-shadow: 0px 0px 20px rgb(100, 100, 100); 
+              
+    }
+
+    .articulo4:hover{
+        height: 100%;
+    }
+  
+    .articulo4 {
+        transition: all 0.3s ease;
+    }
+        
+    .articulo4:hover {
+         box-shadow: 0px 0px 20px rgb(100, 100, 100); 
+      
+     }
+
+    .articulo1 .nombre-articulo {
+       display: none;
+        height: 0;
+        transition: all 0.3s ease;
+      }
+      .articulo1:hover .nombre-articulo {
+        display: flex;
+      }
+
+      .articulo2 .nombre-articulo {
+        display: none;
+         height: 0;
+         transition: all 0.3s ease;
+       }
+       .articulo2:hover .nombre-articulo {
+         display: flex;
+       }
+       
+       .articulo3 .nombre-articulo {
+        display: none;
+         height: 0;
+         transition: all 0.3s ease;
+       }
+       .articulo3:hover .nombre-articulo {
+         display: flex;
+       }
+       
+       .articulo4 .nombre-articulo {
+        display: none;
+         height: 0;
+         transition: all 0.3s ease;
+       }
+       .articulo4:hover .nombre-articulo {
+         display: flex;
+       }
+
+       .articulo1:hover .fa-truck {
+        transition: transform 0.3s ease;
+        transform: rotate(-90deg);
+      }
+
+      .articulo2:hover .fa-truck {
+        transition: transform 0.3s ease;
+        transform: rotate(-90deg);
+      }
+
+      .articulo3:hover .fa-truck {
+        transition: transform 0.3s ease;
+        transform: rotate(-90deg);
+      }
+
+      .articulo4:hover .fa-truck {
+        transition: transform 0.3s ease;
+        transform: rotate(-90deg);
+      }
+
+      
+
+      
+
+}
+
+@media (min-width: 776px) and (max-width: 1155px){
+    .flex-container{
+        height: 600px;
+    }
+}
