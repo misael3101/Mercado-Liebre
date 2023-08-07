@@ -6,10 +6,12 @@ const path = require('path');
 
 //ponemos a escuchar al servidor.
 
-app.listen(3000, () => console.log("servidor corriendo correctamente"))
+
 
 //volvemos estatico el servidor.
 
+const port = process.env.PORT || 3000;
+app.listen(port, () =>console.log(`Servidor corriendo en el puerto ${port}`));
 app.use(express.static('public'));
 
 //redirigirmos rutas.
